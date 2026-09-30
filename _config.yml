@@ -1,5 +1,35 @@
-title: Leap Day theme
-description: Leap Day is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-leap-day
+title: NetB(IO)² Team
+subtitle: Network Biology for Immuno-oncology
+description: >-
+  Vera Pancaldi's lab at the Cancer Research Center of Toulouse (CRCT), Toulouse, France.
+  We use network theory, data science and mathematical modelling to study how
+  the immune system and tumours interact.
+url: "https://verapancaldilab.github.io"
+baseurl: ""
+lang: en
+
+email: vera.pancaldi@inserm.fr
+github: VeraPancaldiLab
+bluesky: verapancaldi.bsky.social
+twitter: VeraPancaldi
+crct: https://www.crct-inserm.fr/en/netbio2_en/
+
+nav:
+  - title: Research
+    url: /research/
+  - title: Tools
+    url: /tools/
+  - title: Team
+    url: /team/
+  - title: Contact
+    url: /contact/
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - pypath_log

@@ -1,0 +1,566 @@
+# Lab publications, newest first.
+# Sources: CRCT NetB(IO)² team page, VeraPancaldiLab GitHub (org README + repo READMEs); authors/dates from Crossref.
+# figure:    image in assets/images/papers/ (a figure from the paper itself; omit for no image)
+# highlight: true -> also shown in "Highlighted" on the Research page
+# preprint:  true -> labelled as preprint
+
+- title: 'Correction: γδ T cells in immunotherapies for B-cell malignancies'
+  authors: Léa Rimailho, Carla Faria, Marcin Domagala, Camille Laurent, Christine Bezombes, Mary Poupot
+  journal: Frontiers in Immunology
+  date: 17 Aug 2026
+  year: 2026
+  doi: 10.3389/fimmu.2026.1933915
+  figure: 10-3389-fimmu-2026-1933915.jpg
+  tags:
+  - Immunotherapy
+  - Leukaemia
+
+- title: 'CellTFusion: a transcriptional regulatory network framework for the identification of functional multicellular states from bulk RNA-seq data'
+  authors: Marcelo Hurtado, Vera Pancaldi
+  journal: bioRxiv
+  date: 05 Jul 2026
+  year: 2026
+  doi: 10.64898/2026.06.30.735682
+  figure: 10-64898-2026-06-30-735682.jpg
+  code: https://github.com/VeraPancaldiLab/CellTFusion
+  docs: https://verapancaldilab.github.io/CellTFusion/
+  tags:
+  - Tumour microenvironment
+  - Deconvolution
+  - Gene regulatory networks
+  preprint: true
+  highlight: true
+
+- title: Specific dendritic cells spatial organization is associated to ICB Response in Non–Small-Cell Lung Cancer
+  authors: Elisa Gobbini, Pierre Duplouye, Marcelo Hurtado, Anne-Claire Doffin, Alexia Gazeu, Léo Hermet, Martial Scavino, Justine Berthet, Leo Laoubi, Sylvie Lantuejoul, Nicolas Gadot, Bertrand Dubois, Audrey Page, Eleonora Sosa Cuevas, Marie-Cécile Michallet, Laurent Greillier, Lionel Falchero, Jean Bernard Auliac, Marie Bernardi, Sophie Bayle, Marie Marcq, Julian Pinsolle, Stéphane Hominal, Olivier Bylicki, Sabine Vieillot, Fabrice Barlesi, Frédérique Penault-Llorca, Emmanuel Barillot, Stephane Depil, Margaux Hubert, Christophe Caux, Nicolas Girard, Vera Pancaldi, Jenny Valladeau-Guilemond
+  journal: bioRxiv
+  date: 07 May 2026
+  year: 2026
+  doi: 10.64898/2026.05.04.720587
+  figure: 10-64898-2026-05-04-720587.jpg
+  code: https://github.com/VeraPancaldiLab/LungPredict_DC_paper
+  tags:
+  - Lung cancer
+  - Spatial omics
+  - Immunotherapy
+  preprint: true
+
+- title: Mosna reveals different types of cellular interactions predictive of response to immunotherapies and survival in cancer
+  authors: Alexis Coullomb, Colas Foulon, Bram van Haastrecht, Paul Monsarrat, Vera Pancaldi
+  journal: Molecular & Cellular Proteomics
+  date: May 2026
+  year: 2026
+  doi: 10.1016/j.mcpro.2026.101536
+  figure: 10-1016-j-mcpro-2026-101536.jpg
+  code: https://github.com/VeraPancaldiLab/mosna
+  tags:
+  - Spatial omics
+  - Immunotherapy
+  - Tumour microenvironment
+  highlight: true
+
+- title: A new pipeline for cross-validation fold-aware machine learning prediction of clinical outcomes addresses hidden data-leakage in omics based 'predictors'
+  authors: Marcelo Hurtado, Vera Pancaldi
+  journal: bioRxiv
+  date: 16 Mar 2026
+  year: 2026
+  doi: 10.64898/2026.03.12.711429
+  figure: 10-64898-2026-03-12-711429.jpg
+  code: https://github.com/VeraPancaldiLab/pipeML
+  docs: https://verapancaldilab.github.io/pipeML/
+  tags:
+  - Machine learning
+  - Clinical prediction
+  preprint: true
+  highlight: true
+
+- title: 'Decoding the integrated stress response of pancreatic cancer: identifying a serine-dependent tumor subset under metabolic relationships with CAFs'
+  authors: Sauyeun Shin, Mehdi Liauzun, Jacobo Solorzano, Morgane Le Bras, Christine Jean, Benjamin Fourneaux, Margaux Dore, Lea Fevrier, Ismahane Belhabib, Alexia Brunel, Cindy Neuzillet, Marion Larroque, Carine Joffre, Stephane Rocchi, Nicolas Fraunhoffer, Aurelie Perraud, Muriel Mathonnet, Vera Pancaldi, Laetitia Linares, Juan Iovanna, Nelson Dusetti, Ola Larsson, Remy Nicolle, Stephane Pyronnet, Corinne Bousquet, Yvan Martineau
+  journal: Advanced Science
+  date: Mar 2026
+  year: 2026
+  doi: 10.1002/advs.202515740
+  figure: 10-1002-advs-202515740.jpg
+  tags:
+  - Pancreatic cancer
+  - Tumour microenvironment
+
+- title: Data driven network inference and longitudinal transcriptomics unveil dynamic regulation in chronic lymphocytic leukaemia models
+  authors: Malvina Marku, Hugo Chenel, Julie Bordenave, Marcelo Hurtado, Marcin Domagala, Flavien Raynal, Mary Poupot, Loïc Ysebaert, Andrei Zinovyev, Vera Pancaldi
+  journal: NPJ Systems Biology and Applications
+  date: 15 Jan 2026
+  year: 2026
+  doi: 10.1038/s41540-025-00645-4
+  figure: 10-1038-s41540-025-00645-4.jpg
+  code: https://github.com/VeraPancaldiLab/CLL_GRN_paper
+  tags:
+  - Gene regulatory networks
+  - Leukaemia
+  - Modelling
+  highlight: true
+
+- title: Unraveling the network signatures of oncogenicity in virus-human protein-protein interactions
+  authors: Francesco Zambelli, Vera Pancaldi, Manlio De Domenico
+  journal: Entropy
+  date: 11 Dec 2025
+  year: 2025
+  doi: 10.3390/e27121248
+  figure: 10-3390-e27121248.jpg
+  tags:
+  - Network medicine
+
+- title: 'PhysiGym: bridging the gap between the Gymnasium reinforcement learning application interface and the PhysiCell agent-based model software'
+  authors: Alexandre Bertin, Elmar Bucher, Owen Griere, Marcelo Hurtado, Heber Rocha, Randy Heiland, Aneequa Sundus, Paul Macklin, Vincent François-Lavet, Emmanuel Rachelson, Vera Pancaldi
+  journal: bioRxiv
+  date: 24 Sep 2025
+  year: 2025
+  doi: 10.1101/2025.09.18.677030
+  figure: 10-1101-2025-09-18-677030.jpg
+  code: https://github.com/VeraPancaldiLab/PhysiGym
+  tags:
+  - Modelling
+  - Machine learning
+  - Software
+  preprint: true
+
+- title: 'TNF signature in advanced melanoma patients treated with immune checkpoint inhibitors: results from the MELANFα clinical study'
+  authors: Mathieu Virazels, Amélie Lusque, Stéphanie Brayer, Matthieu Genais, Carine Dufau, Jean Milhès, Thomas Filleron, Cécile Pagès, Vincent Sibaud, Laurent Mortier, Olivier Dereure, Maha Ayyoub, Amandine Fabre, Nathalie Andrieu‐Abadie, Vera Pancaldi, Céline Colacios, Nicolas Meyer, Bruno Ségui, Anne Montfort
+  journal: International Journal of Cancer
+  date: Aug 2025
+  year: 2025
+  doi: 10.1002/ijc.35416
+  figure: 10-1002-ijc-35416.jpg
+  tags:
+  - Immunotherapy
+  - Clinical prediction
+
+- title: Microbiome gut community structure and functionality are associated with symptom severity in non-responsive celiac disease patients
+  authors: Laura Judith Marcos-Zambrano, Blanca Lacruz-Pleguezuelos, Elena Aguilar-Aguilar, Helena Marcos-Pasero, Alberto Valdés, Viviana Loria-Kohen, Alejandro Cifuentes, Ana Ramirez de Molina, Alberto Diaz-Ruiz, Vera Pancaldi, Enrique Carrillo de Santa Pau
+  journal: mSystems
+  date: 22 Jul 2025
+  year: 2025
+  doi: 10.1128/msystems.00143-25
+  figure: 10-1128-msystems-00143-25.jpg
+  tags:
+  - Microbiome
+
+- title: multideconv – an integrative pipeline for efficiently combining first and second generation cell type deconvolution results
+  authors: Marcelo Hurtado, Abdelmounim Essabbar, Leila Khajavi, Vera Pancaldi
+  journal: bioRxiv
+  date: 03 May 2025
+  year: 2025
+  doi: 10.1101/2025.04.29.651220
+  figure: 10-1101-2025-04-29-651220.jpg
+  code: https://github.com/VeraPancaldiLab/multideconv
+  docs: https://verapancaldilab.github.io/multideconv/
+  tags:
+  - Deconvolution
+  - Tumour microenvironment
+  - Software
+  preprint: true
+  highlight: true
+
+- title: 'Evidence of epigenetic oncogenesis: a turning point in cancer research'
+  authors: Jean‐Pascal Capp, Benoît Aliaga, Vera Pancaldi
+  journal: BioEssays
+  date: Mar 2025
+  year: 2025
+  doi: 10.1002/bies.202400183
+  figure: 10-1002-bies-202400183.jpg
+  tags:
+  - Epigenomics
+
+- title: Global chromatin reorganization and regulation of genes with specific evolutionary ages during differentiation and cancer
+  authors: Flavien Raynal, Kaustav Sengupta, Dariusz Plewczynski, Benoît Aliaga, Vera Pancaldi
+  journal: Nucleic Acids Research
+  date: 08 Feb 2025
+  year: 2025
+  doi: 10.1093/nar/gkaf084
+  figure: 10-1093-nar-gkaf084.jpg
+  code: https://github.com/VeraPancaldiLab/Gene_Ages_3D_Paper
+  tags:
+  - Genome architecture
+  - Epigenomics
+  highlight: true
+
+- title: Transcriptomics profiling of the non-small cell lung cancer microenvironment across disease stages reveals dual immune cell-type behaviors
+  authors: Marcelo Hurtado, Leila Khajavi, Abdelmounim Essabbar, Michael Kammer, Ting Xie, Alexis Coullomb, Anne Pradines, Anne Casanova, Anna Kruczynski, Sandrine Gouin, Estelle Clermont, Léa Boutillet, Maria Fernanda Senosain, Yong Zou, Shillin Zhao, Prosper Burq, Abderrahim Mahfoudi, Jerome Besse, Pierre Launay, Alexandre Passioukov, Eric Chetaille, Gilles Favre, Fabien Maldonado, Francisco Cruzalegui, Olivier Delfour, Julien Mazières, Vera Pancaldi
+  journal: Frontiers in Immunology
+  date: 31 Oct 2024
+  year: 2024
+  doi: 10.3389/fimmu.2024.1394965
+  figure: 10-3389-fimmu-2024-1394965.jpg
+  code: https://github.com/VeraPancaldiLab/LungPredict1_paper
+  tags:
+  - Lung cancer
+  - Tumour microenvironment
+  - Deconvolution
+  highlight: true
+
+- title: 'Editorial: New insights into innate immune cell-based immunotherapies in cancer'
+  authors: Anne Caignard, Mary Poupot-Marsan, Virginie Lafont, Daniela Wesch, Chiara Porta
+  journal: Frontiers in Immunology
+  date: 09 Apr 2024
+  year: 2024
+  doi: 10.3389/fimmu.2024.1401665
+  tags:
+  - Immunotherapy
+
+- title: Cytidine deaminase resolves replicative stress and protects pancreatic cancer from DNA-targeting drugs
+  authors: Audrey Lumeau, Nicolas Bery, Audrey Francès, Marion Gayral, Guillaume Labrousse, Cyril Ribeyre, Charlene Lopez, Adele Nevot, Abdessamad El Kaoutari, Naima Hanoun, Emeline Sarot, Marion Perrier, Frederic Pont, Juan-Pablo Cerapio, Jean-Jacques Fournié, Frederic Lopez, Miguel Madrid-Mencia, Vera Pancaldi, Marie-Jeanne Pillaire, Valerie Bergoglio, Jerome Torrisani, Nelson Dusetti, Jean-Sebastien Hoffmann, Louis Buscail, Malik Lutzmann, Pierre Cordelier
+  journal: Cancer Research
+  date: 01 Apr 2024
+  year: 2024
+  doi: 10.1158/0008-5472.CAN-22-3219
+  figure: 10-1158-0008-5472-can-22-3219.jpg
+  tags:
+  - Pancreatic cancer
+
+- title: 3D chromatin interactions involving Drosophila insulators are infrequent but preferential and arise before TADs and transcription
+  authors: Olivier Messina, Flavien Raynal, Julian Gurgo, Jean-Bernard Fiche, Vera Pancaldi, Marcelo Nollmann
+  journal: Nature Communications
+  date: 21 Oct 2023
+  year: 2023
+  doi: 10.1038/s41467-023-42485-y
+  figure: 10-1038-s41467-023-42485-y.jpg
+  tags:
+  - Genome architecture
+
+- title: 'From time-series transcriptomics to gene regulatory networks: a review on inference methods'
+  authors: Malvina Marku, Vera Pancaldi
+  journal: PLoS Computational Biology
+  date: 10 Aug 2023
+  year: 2023
+  doi: 10.1371/journal.pcbi.1011254
+  figure: 10-1371-journal-pcbi-1011254.jpg
+  code: https://github.com/VeraPancaldiLab/GRN_inference
+  tags:
+  - Gene regulatory networks
+
+- title: Integrated multi-omics analysis of early lung adenocarcinoma links tumor biological features with predicted indolence or aggressiveness
+  authors: Maria-Fernanda Senosain, Yong Zou, Khushbu Patel, Shilin Zhao, Alexis Coullomb, Dianna J. Rowe, Jonathan M. Lehman, Jonathan M. Irish, Fabien Maldonado, Michael N. Kammer, Vera Pancaldi, Carlos F. Lopez
+  journal: Cancer Research Communications
+  date: 26 Jul 2023
+  year: 2023
+  doi: 10.1158/2767-9764.CRC-22-0373
+  figure: 10-1158-2767-9764-crc-22-0373.jpg
+  tags:
+  - Lung cancer
+  - Spatial omics
+
+- title: γδ T cells in immunotherapies for B-cell malignancies
+  authors: Léa Rimailho, Carla Faria, Marcin Domagala, Camille Laurent, Christine Bezombes, Mary Poupot
+  journal: Frontiers in Immunology
+  date: 22 Jun 2023
+  year: 2023
+  doi: 10.3389/fimmu.2023.1200003
+  figure: 10-3389-fimmu-2023-1200003.jpg
+  tags:
+  - Immunotherapy
+  - Leukaemia
+
+- title: An agent-based model of monocyte differentiation into tumour-associated macrophages in chronic lymphocytic leukemia
+  authors: Nina Verstraete, Malvina Marku, Marcin Domagala, Hélène Arduin, Julie Bordenave, Jean-Jacques Fournié, Loïc Ysebaert, Mary Poupot, Vera Pancaldi
+  journal: iScience
+  date: Jun 2023
+  year: 2023
+  doi: 10.1016/j.isci.2023.106897
+  figure: 10-1016-j-isci-2023-106897.jpg
+  code: https://github.com/VeraPancaldiLab/Agent-Based-Model-of-NLC-in-CLL
+  tags:
+  - Modelling
+  - Leukaemia
+  - Macrophages
+  highlight: true
+
+- title: Network models of chromatin structure
+  authors: Vera Pancaldi
+  journal: Current Opinion in Genetics & Development
+  date: Jun 2023
+  year: 2023
+  doi: 10.1016/j.gde.2023.102051
+  tags:
+  - Genome architecture
+
+- title: 'Dissecting cellular phenotypes in the tumour microenvironment through gene regulatory networks: inference, analysis and dynamical modelling'
+  authors: Marku M, Chenel H, Pancaldi V
+  journal: Immunology and Cancer Biology (book chapter)
+  year: 2023
+  url: https://videleaf.com/dissecting-cellular-phenotypes-in-the-tumour-microenvironment-through-gene-regulatory-networks-inference-analysis-and-dynamical-modelling/
+  tags:
+  - Gene regulatory networks
+  - Modelling
+
+- title: A practical introduction to single-cell RNA-seq in immuno-oncology
+  authors: Aliaga B, Genais M, Pancaldi V
+  journal: Immunology and Cancer Biology (book chapter)
+  year: 2023
+  url: https://videleaf.com/a-practical-introduction-to-single-cellrna-seq-in-immuno-oncology/
+  tags:
+  - Single-cell
+
+- title: Epigenome-wide analysis of T-cell large granular lymphocytic leukemia identifies BCL11B as a potential biomarker
+  authors: Patricia Johansson, Teresa Laguna, Julio Ossowski, Vera Pancaldi, Martina Brauser, Ulrich Dührsen, Lara Keuneke, Ana Queiros, Julia Richter, José I. Martín-Subero, Reiner Siebert, Brigitte Schlegelberger, Ralf Küppers, Jan Dürig, Eva M. Murga Penas, Enrique Carillo-de Santa Pau, Anke K. Bergmann
+  journal: Clinical Epigenetics
+  date: Dec 2022
+  year: 2022
+  doi: 10.1186/s13148-022-01362-z
+  figure: 10-1186-s13148-022-01362-z.jpg
+  tags:
+  - Epigenomics
+  - Leukaemia
+
+- title: 3D chromatin connectivity underlies replication origin efficiency in mouse embryonic stem cells
+  authors: Karolina Jodkowska, Vera Pancaldi, Maria Rigau, Ricardo Almeida, José M Fernández-Justel, Osvaldo Graña-Castro, Sara Rodríguez-Acebes, Miriam Rubio-Camarillo, Enrique Carrillo-de Santa Pau, David Pisano, Fátima Al-Shahrour, Alfonso Valencia, María Gómez, Juan Méndez
+  journal: Nucleic Acids Research
+  date: 28 Nov 2022
+  year: 2022
+  doi: 10.1093/nar/gkac1111
+  figure: 10-1093-nar-gkac1111.jpg
+  tags:
+  - Genome architecture
+
+- title: The antitumoral activity of TLR7 ligands is corrupted by the microenvironment of pancreatic tumors
+  authors: Marie Rouanet, Naima Hanoun, Hubert Lulka, Cindy Ferreira, Pierre Garcin, Martin Sramek, Godefroy Jacquemin, Agnès Coste, Delphine Pagan, Carine Valle, Emeline Sarot, Vera Pancaldi, Frédéric Lopez, Louis Buscail, Pierre Cordelier
+  journal: Molecular Therapy
+  date: Apr 2022
+  year: 2022
+  doi: 10.1016/j.ymthe.2022.01.018
+  tags:
+  - Pancreatic cancer
+  - Tumour microenvironment
+
+- title: Community-wide hackathons to identify central themes in single-cell multi-omics
+  authors: Kim-Anh Lê Cao, Al J. Abadi, Emily F. Davis-Marcisak, Lauren Hsu, Arshi Arora, Alexis Coullomb, Atul Deshpande, Yuzhou Feng, Pratheepa Jeganathan, Melanie Loth, Chen Meng, Wancen Mu, Vera Pancaldi, Kris Sankaran, Dario Righelli, Amrit Singh, Joshua S. Sodicoff, Genevieve L. Stein-O’Brien, Ayshwarya Subramanian, Joshua D. Welch, Yue You, Ricard Argelaguet, Vincent J. Carey, Ruben Dries, Casey S. Greene, Susan Holmes, Michael I. Love, Matthew E. Ritchie, Guo-Cheng Yuan, Aedin C. Culhane, Elana Fertig
+  journal: Genome Biology
+  date: Dec 2021
+  year: 2021
+  doi: 10.1186/s13059-021-02433-9
+  figure: 10-1186-s13059-021-02433-9.jpg
+  tags:
+  - Single-cell
+  - Spatial omics
+
+- title: STAG2 loss-of-function affects short-range genomic contacts and modulates the basal-luminal transcriptional program of bladder cancer cells
+  authors: Laia Richart, Eleonora Lapi, Vera Pancaldi, Mirabai Cuenca-Ardura, Enrique Carrillo-de-Santa Pau, Miguel Madrid-Mencía, Hélène Neyret-Kahn, François Radvanyi, Juan Antonio Rodríguez, Yasmina Cuartero, François Serra, François Le Dily, Alfonso Valencia, Marc A Marti-Renom, Francisco X Real
+  journal: Nucleic Acids Research
+  date: 08 Nov 2021
+  year: 2021
+  doi: 10.1093/nar/gkab864
+  figure: 10-1093-nar-gkab864.jpg
+  tags:
+  - Genome architecture
+
+- title: Tysserand — fast and accurate reconstruction of spatial networks from bioimages
+  authors: Alexis Coullomb, Vera Pancaldi
+  journal: Bioinformatics
+  date: 05 Nov 2021
+  year: 2021
+  doi: 10.1093/bioinformatics/btab490
+  figure: 10-1093-bioinformatics-btab490.jpg
+  code: https://github.com/VeraPancaldiLab/tysserand
+  tags:
+  - Spatial omics
+  - Software
+  highlight: true
+
+- title: 'Chromatin network analyses: towards structure-function relationships in epigenomics'
+  authors: Vera Pancaldi
+  journal: Frontiers in Bioinformatics
+  date: 27 Oct 2021
+  year: 2021
+  doi: 10.3389/fbinf.2021.742216
+  figure: 10-3389-fbinf-2021-742216.jpg
+  tags:
+  - Genome architecture
+  - Epigenomics
+
+- title: Activation of vitamin D receptor pathway enhances differentiating capacity in acute myeloid leukemia with isocitrate dehydrogenase mutations
+  authors: Marie Sabatier, Emeline Boet, Sonia Zaghdoudi, Nathan Guiraud, Alexis Hucteau, Nathaniel Polley, Guillaume Cognet, Estelle Saland, Laura Lauture, Thomas Farge, Ambrine Sahal, Vera Pancaldi, Emeline Chu-Van, Florence Castelli, Sarah Bertoli, Pierre Bories, Christian Récher, Héléna Boutzen, Véronique Mansat-De Mas, Lucille Stuani, Jean-Emmanuel Sarry
+  journal: Cancers
+  date: 19 Oct 2021
+  year: 2021
+  doi: 10.3390/cancers13205243
+  figure: 10-3390-cancers13205243.jpg
+  tags:
+  - Leukaemia
+
+- title: Low replicative stress triggers cell-type specific inheritable advanced replication timing
+  authors: Lilas Courtot, Elodie Bournique, Chrystelle Maric, Laure Guitton-Sert, Miguel Madrid-Mencía, Vera Pancaldi, Jean-Charles Cadoret, Jean-Sébastien Hoffmann, Valérie Bergoglio
+  journal: International Journal of Molecular Sciences
+  date: 07 May 2021
+  year: 2021
+  doi: 10.3390/ijms22094959
+  figure: 10-3390-ijms22094959.jpg
+  tags:
+  - Genome architecture
+
+- title: Mitochondrial metabolism supports resistance to IDH mutant inhibitors in acute myeloid leukemia
+  authors: Lucille Stuani, Marie Sabatier, Estelle Saland, Guillaume Cognet, Nathalie Poupin, Claudie Bosc, Florence A. Castelli, Lara Gales, Evgenia Turtoi, Camille Montersino, Thomas Farge, Emeline Boet, Nicolas Broin, Clément Larrue, Natalia Baran, Madi Y. Cissé, Marc Conti, Sylvain Loric, Tony Kaoma, Alexis Hucteau, Aliki Zavoriti, Ambrine Sahal, Pierre-Luc Mouchel, Mathilde Gotanègre, Cédric Cassan, Laurent Fernando, Feng Wang, Mohsen Hosseini, Emeline Chu-Van, Laurent Le Cam, Martin Carroll, Mary A. Selak, Norbert Vey, Rémy Castellano, François Fenaille, Andrei Turtoi, Guillaume Cazals, Pierre Bories, Yves Gibon, Brandon Nicolay, Sébastien Ronseaux, Joseph R. Marszalek, Koichi Takahashi, Courtney D. DiNardo, Marina Konopleva, Véra Pancaldi, Yves Collette, Floriant Bellvert, Fabien Jourdan, Laetitia K. Linares, Christian Récher, Jean-Charles Portais, Jean-Emmanuel Sarry
+  journal: Journal of Experimental Medicine
+  date: 03 May 2021
+  year: 2021
+  doi: 10.1084/jem.20200924
+  figure: 10-1084-jem-20200924.jpg
+  tags:
+  - Leukaemia
+
+- title: 'GEM-DeCan: Improved tumor immune microenvironment profiling through novel gene expression and DNA methylation signatures predicts immunotherapy response'
+  authors: Ting Xie, Jacobo Solórzano, Miguel Madrid-Mencía, Abdelmounim Essabbar, Julien Pernet, Mei-Shiue Kuo, Alexis Hucteau, Alexis Coullomb, Nina Verstraete, Olivier Delfour, Francisco Cruzalegui, Vera Pancaldi
+  journal: bioRxiv
+  date: 11 Apr 2021
+  year: 2021
+  doi: 10.1101/2021.04.09.439207
+  figure: 10-1101-2021-04-09-439207.jpg
+  code: https://github.com/VeraPancaldiLab/GEMDeCan
+  tags:
+  - Deconvolution
+  - Epigenomics
+  preprint: true
+
+- title: Insights on TAM formation from a Boolean model of macrophage polarization based on in vitro studies
+  authors: Malvina Marku, Nina Verstraete, Flavien Raynal, Miguel Madrid-Mencía, Marcin Domagala, Jean-Jacques Fournié, Loïc Ysebaert, Mary Poupot, Vera Pancaldi
+  journal: Cancers
+  date: 07 Dec 2020
+  year: 2020
+  doi: 10.3390/cancers12123664
+  figure: 10-3390-cancers12123664.jpg
+  code: https://github.com/VeraPancaldiLab/MacrophageModel_MaBoSS
+  tags:
+  - Modelling
+  - Macrophages
+  - Leukaemia
+
+- title: 'Supporting clinical decision-making during the SARS-CoV-2 pandemic through a global research commitment: the TERAVOLT experience'
+  authors: Annalisa Trama, Claudia Proto, Jennifer G. Whisenant, Valter Torri, Alessio Cortellini, Olivier Michielin, Fabrice Barlesi, Anne-Marie C. Dingemans, Jan Van Meerbeeck, Vera Pancaldi, Julien Mazieres, Ross A. Soo, Natasha B. Leighl, Solange Peters, Heather Wakelee, Leora Horn, Matthew Hellmann, Selina K. Wong, Marina Chiara Garassino, Javier Baena
+  journal: Cancer Cell
+  date: Nov 2020
+  year: 2020
+  doi: 10.1016/j.ccell.2020.10.002
+  tags:
+  - Lung cancer
+
+- title: 'CovMulNet19, integrating proteins, diseases, drugs, and symptoms: a network medicine approach to COVID-19'
+  authors: Nina Verstraete, Giuseppe Jurman, Giulia Bertagnolli, Arsham Ghavasieh, Vera Pancaldi, Manlio De Domenico
+  journal: Network and Systems Medicine
+  date: 01 Nov 2020
+  year: 2020
+  doi: 10.1089/nsm.2020.0011
+  figure: 10-1089-nsm-2020-0011.jpg
+  tags:
+  - Network medicine
+
+- title: Eomes-dependent loss of the co-activating receptor CD226 restrains CD8+ T cell anti-tumor functions and limits the efficacy of cancer immunotherapy
+  authors: Marianne Weulersse, Assia Asrir, Andrea C. Pichler, Lea Lemaitre, Matthias Braun, Nadège Carrié, Marie-Véronique Joubert, Marie Le Moine, Laura Do Souto, Guillaume Gaud, Indrajit Das, Elisa Brauns, Clara M. Scarlata, Elena Morandi, Ashmitha Sundarrajan, Marine Cuisinier, Laure Buisson, Sabrina Maheo, Sahar Kassem, Arantxa Agesta, Michaël Pérès, Els Verhoeyen, Alejandra Martinez, Julien Mazieres, Loïc Dupré, Thomas Gossye, Vera Pancaldi, Camille Guillerey, Maha Ayyoub, Anne S. Dejean, Abdelhadi Saoudi, Stanislas Goriely, Hervé Avet-Loiseau, Tobias Bald, Mark J. Smyth, Ludovic Martinet
+  journal: Immunity
+  date: Oct 2020
+  year: 2020
+  doi: 10.1016/j.immuni.2020.09.006
+  tags:
+  - Immunotherapy
+
+- title: Chromatin network markers of leukemia
+  authors: N Malod-Dognin, V Pancaldi, A Valencia, N Pržulj
+  journal: Bioinformatics
+  date: 01 Jul 2020
+  year: 2020
+  doi: 10.1093/bioinformatics/btaa445
+  figure: 10-1093-bioinformatics-btaa445.jpg
+  tags:
+  - Genome architecture
+  - Leukaemia
+
+- title: 'COVID-19 in patients with thoracic malignancies (TERAVOLT): first results of an international, registry-based, cohort study'
+  authors: Marina Chiara Garassino, Jennifer G Whisenant, Li-Ching Huang, Annalisa Trama, Valter Torri, Francesco Agustoni, Javier Baena, Giuseppe Banna, Rossana Berardi, Anna Cecilia Bettini, Emilio Bria, Matteo Brighenti, Jacques Cadranel, Alessandro De Toma, Claudio Chini, Alessio Cortellini, Enriqueta Felip, Giovanna Finocchiaro, Pilar Garrido, Carlo Genova, Raffaele Giusti, Vanesa Gregorc, Francesco Grossi, Federica Grosso, Salvatore Intagliata, Nicla La Verde, Stephen V Liu, Julien Mazieres, Edoardo Mercadante, Olivier Michielin, Gabriele Minuti, Denis Moro-Sibilot, Giulia Pasello, Antonio Passaro, Vieri Scotti, Piergiorgio Solli, Elisa Stroppa, Marcello Tiseo, Giuseppe Viscardi, Luca Voltolini, Yi-Long Wu, Silvia Zai, Vera Pancaldi, Anne-Marie Dingemans, Jan Van Meerbeeck, Fabrice Barlesi, Heather Wakelee, Solange Peters, Leora Horn
+  journal: The Lancet Oncology
+  date: Jul 2020
+  year: 2020
+  doi: 10.1016/S1470-2045(20)30314-4
+  tags:
+  - Lung cancer
+
+- title: Interpreting molecular similarity between patients as a determinant of disease comorbidity relationships
+  authors: Jon Sánchez-Valle, Héctor Tejero, José María Fernández, David Juan, Beatriz Urda-García, Salvador Capella-Gutiérrez, Fátima Al-Shahrour, Rafael Tabarés-Seisdedos, Anaïs Baudot, Vera Pancaldi, Alfonso Valencia
+  journal: Nature Communications
+  date: 05 Jun 2020
+  year: 2020
+  doi: 10.1038/s41467-020-16540-x
+  figure: 10-1038-s41467-020-16540-x.jpg
+  tags:
+  - Network medicine
+
+- title: 'TERAVOLT: Thoracic Cancers International COVID-19 Collaboration'
+  authors: Jennifer G. Whisenant, Annalisa Trama, Valter Torri, Alessandro De Toma, Giuseppe Viscardi, Alessio Cortellini, Olivier Michielin, Fabrice Barlesi, Anne-Marie C. Dingemans, Jan Van Meerbeeck, Vera Pancaldi, Ross A. Soo, Natasha B. Leighl, Solange Peters, Heather Wakelee, Marina Chiara Garassino, Leora Horn
+  journal: Cancer Cell
+  date: Jun 2020
+  year: 2020
+  doi: 10.1016/j.ccell.2020.05.008
+  figure: 10-1016-j-ccell-2020-05-008.jpg
+  tags:
+  - Lung cancer
+
+- title: Using GARDEN-NET and ChAseR to explore human haematopoietic 3D chromatin interaction networks
+  authors: Miguel Madrid-Mencía, Emanuele Raineri, Tran Bich Ngoc Cao, Vera Pancaldi
+  journal: Nucleic Acids Research
+  date: 07 May 2020
+  year: 2020
+  doi: 10.1093/nar/gkaa159
+  figure: 10-1093-nar-gkaa159.jpg
+  code: https://github.com/VeraPancaldiLab/GARDEN-NET
+  docs: https://pancaldi.bsc.es/garden-net/
+  tags:
+  - Genome architecture
+  - Software
+  highlight: true
+
+- title: Unveiling new disease, pathway, and gene associations via multi-scale neural network
+  authors: Thomas Gaudelet, Noël Malod-Dognin, Jon Sánchez-Valle, Vera Pancaldi, Alfonso Valencia, Nataša Pržulj
+  journal: PLoS One
+  date: 06 Apr 2020
+  year: 2020
+  doi: 10.1371/journal.pone.0231059
+  figure: 10-1371-journal-pone-0231059.jpg
+  tags:
+  - Network medicine
+
+- title: 'ChiCMaxima: a robust and simple pipeline for detection and visualization of chromatin looping in Capture Hi-C'
+  authors: Yousra Ben Zouari, Anne M. Molitor, Natalia Sikorska, Vera Pancaldi, Tom Sexton
+  journal: Genome Biology
+  date: Dec 2019
+  year: 2019
+  doi: 10.1186/s13059-019-1706-3
+  figure: 10-1186-s13059-019-1706-3.jpg
+  tags:
+  - Genome architecture
+  - Software
+
+- title: Transcriptomic metaanalyses of autistic brains reveals shared gene expression and biological pathway abnormalities with cancer
+  authors: Jaume Forés-Martos, Ferrán Catalá-López, Jon Sánchez-Valle, Kristina Ibáñez, Héctor Tejero, Helena Palma-Gudiel, Joan Climent, Vera Pancaldi, Lourdes Fañanás, Celso Arango, Mara Parellada, Anaïs Baudot, Daniel Vogt, John L. Rubenstein, Alfonso Valencia, Rafael Tabarés-Seisdedos
+  journal: Molecular Autism
+  date: Dec 2019
+  year: 2019
+  doi: 10.1186/s13229-019-0262-8
+  figure: 10-1186-s13229-019-0262-8.jpg
+  tags:
+  - Network medicine
+
+- title: 'Molecular inverse comorbidity between Alzheimer''s disease and lung cancer: new insights from matrix factorization'
+  authors: Alessandro Greco, Jon Sanchez Valle, Vera Pancaldi, Anaïs Baudot, Emmanuel Barillot, Michele Caselle, Alfonso Valencia, Andrei Zinovyev, Laura Cantini
+  journal: International Journal of Molecular Sciences
+  date: 26 Jun 2019
+  year: 2019
+  doi: 10.3390/ijms20133114
+  figure: 10-3390-ijms20133114.jpg
+  tags:
+  - Network medicine
+
+- title: Integrating epigenomic data and 3D genomic structure with a new measure of chromatin assortativity
+  authors: Vera Pancaldi, Enrique Carrillo-de-Santa-Pau, Biola Maria Javierre, David Juan, Peter Fraser, Mikhail Spivakov, Alfonso Valencia, Daniel Rico
+  journal: Genome Biology
+  date: Dec 2016
+  year: 2016
+  doi: 10.1186/s13059-016-1003-3
+  figure: 10-1186-s13059-016-1003-3.jpg
+  tags:
+  - Genome architecture
+  - Epigenomics

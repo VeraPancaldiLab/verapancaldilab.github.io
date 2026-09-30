@@ -1,0 +1,18 @@
+<section class="partners">
+  <h2>Partnerships &amp; funding</h2>
+  <div class="partner-logos">
+    {% for p in site.data.partners %}
+    <a href="{{ p.url }}" title="{{ p.name }}"><img src="{{ '/assets/images/partners/' | append: p.logo | relative_url }}" alt="{{ p.name }}" loading="lazy"></a>
+    {% endfor %}
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="social">
+    <a href="https://github.com/{{ site.github }}" aria-label="GitHub" title="GitHub">{% include icon.html name="github" %}</a>
+    <a href="https://bsky.app/profile/{{ site.bluesky }}" aria-label="Bluesky" title="Bluesky">{% include icon.html name="bluesky" %}</a>
+    <a href="mailto:{{ site.email }}" aria-label="Email" title="Email">{% include icon.html name="mail" %}</a>
+    <a href="{{ site.crct }}" aria-label="Cancer Research Center of Toulouse (CRCT) team page" title="Cancer Research Center of Toulouse (CRCT) team page">{% include icon.html name="building" %}</a>
+  </div>
+  <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }} — {{ site.subtitle }}<br>
+    Cancer Research Center of Toulouse (CRCT), Toulouse, France</p>
+</footer>

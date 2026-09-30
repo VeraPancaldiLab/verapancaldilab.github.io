@@ -1,0 +1,97 @@
+# Team members. Source: Cancer Research Center of Toulouse (CRCT) NetB(IO)² team page and the VeraPancaldiLab GitHub organisation.
+# group must match one of the groups listed in team/index.html
+
+- name: Vera Pancaldi
+  role: Team leader · Permanent scientist
+  group: pi
+  photo: pancaldi.jpg
+  bio: Trained as a physicist at Imperial College London with 13 years of experience in computational
+    biology. Since 2018 she leads the NetB(IO)² team at the Cancer Research Center of Toulouse (CRCT)
+    as the recipient of the Chair for bioinformatics in Oncology of the CRCT, working on modelling cancer
+    and, in particular, cellular interactions in the tumour microenvironment.
+  email: vera.pancaldi@inserm.fr
+  github: VeraPancaldi
+  bluesky: verapancaldi.bsky.social
+
+- name: Mary Poupot
+  role: Permanent scientist
+  group: permanent
+  photo: poupot.jpg
+  bio: Leads the experimental studies on cellular interactions in the microenvironment within the team.
+
+- name: Benoît Aliaga
+  role: Postdoctoral researcher
+  field: Computational biologist
+  group: postdoc
+  photo: aliaga.jpg
+  github: baliaga31
+
+- name: Saber Amri
+  role: Postdoctoral researcher
+  field: Experimental biologist
+  group: postdoc
+  photo: amri.jpg
+
+- name: Sushant Parab
+  role: Postdoctoral researcher
+  field: Computational biologist
+  group: postdoc
+  photo: parab.jpg
+  github: SushantParab19
+
+- name: Joel Herrera
+  role: Postdoctoral researcher
+  field: Computational biologist
+  group: postdoc
+
+- name: Marcelo Hurtado
+  role: PhD student
+  field: Computational biology
+  group: phd
+  photo: hurtado.jpg
+  github: mhurtado13
+
+- name: Hugo Chenel
+  role: PhD student
+  field: Computational biology
+  group: phd
+  photo: chenel.jpg
+  github: HugoChenel
+
+- name: Chloé Bazile
+  role: PhD student
+  field: Cancerology
+  group: phd
+  photo: bazile.jpg
+
+- name: Hafida Hamdache
+  role: PhD student
+  field: Computational biology
+  group: phd
+  github: HHafida
+
+- name: Alexandre Bertin
+  role: PhD student
+  field: Computational biology
+  group: phd
+  github: Dante-Berth
+
+- name: Julie Bordenave
+  role: Laboratory engineer
+  group: engineer
+  photo: bordenave.jpg
+
+- name: Emilie Montaut
+  role: Bioinformatics engineer
+  group: engineer
+  photo: montaut.jpg
+
+- name: Augustine Blanc-Boekholt
+  role: Bioinformatics engineer
+  group: engineer
+  photo: blanc-boekholt.jpg
+
+- name: Owen Griere
+  role: Bioinformatics engineer
+  group: engineer
+  github: OwenGriere

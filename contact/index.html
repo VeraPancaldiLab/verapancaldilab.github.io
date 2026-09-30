@@ -1,0 +1,86 @@
+---
+layout: default
+title: Contact
+heading: Contact
+lead: Interested in collaborating, joining the team or learning more about our work? We would be happy to hear from you.
+---
+{% assign pi = site.data.team | where: "group", "pi" | first %}
+<section class="section">
+  <div class="contact-layout">
+    <div class="contact-info">
+      <div class="contact-person">
+        <img src="{{ '/assets/images/team/' | append: pi.photo | relative_url }}" alt="Photo of {{ pi.name }}" width="96" height="96">
+        <div>
+          <div class="contact-person-name">{{ pi.name }}</div>
+          <div class="contact-person-role">Team leader, NetB(IO)²</div>
+          <a class="button" href="mailto:{{ site.email }}">{% include icon.html name="mail" %} Send an email</a>
+        </div>
+      </div>
+
+      <ul class="contact-list">
+        <li>
+          <span class="contact-icon">{% include icon.html name="mail" %}</span>
+          <div>
+            <div class="contact-label">Email</div>
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </div>
+        </li>
+        <li>
+          <span class="contact-icon">{% include icon.html name="pin" %}</span>
+          <div>
+            <div class="contact-label">Address</div>
+            NetB(IO)² Team — Vera Pancaldi<br>
+            Cancer Research Center of Toulouse (CRCT)<br>
+            Oncopole, 2 avenue Hubert Curien<br>
+            31037 Toulouse, France
+          </div>
+        </li>
+        <li>
+          <span class="contact-icon">{% include icon.html name="github" %}</span>
+          <div>
+            <div class="contact-label">Code</div>
+            <a href="https://github.com/{{ site.github }}">github.com/{{ site.github }}</a>
+          </div>
+        </li>
+        <li>
+          <span class="contact-icon">{% include icon.html name="bluesky" %}</span>
+          <div>
+            <div class="contact-label">Bluesky</div>
+            <a href="https://bsky.app/profile/{{ site.bluesky }}">@{{ site.bluesky }}</a>
+          </div>
+        </li>
+        <li>
+          <span class="contact-icon">{% include icon.html name="building" %}</span>
+          <div>
+            <div class="contact-label">Institute</div>
+            <a href="{{ site.crct }}">Team page at the Cancer Research Center of Toulouse (CRCT)</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact-map">
+      <iframe title="Map showing the Cancer Research Center of Toulouse (CRCT), Oncopole, Toulouse" loading="lazy"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=1.4185%2C43.5536%2C1.4345%2C43.5616&amp;layer=mapnik&amp;marker=43.5576%2C1.4266"></iframe>
+      <a class="map-link" href="https://www.openstreetmap.org/?mlat=43.5576&amp;mlon=1.4266#map=17/43.5576/1.4266">Open larger map →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Work with us</h2>
+  <div class="grid-3">
+    <div class="box">
+      <h4>Collaborations</h4>
+      <p>We work closely with clinicians, experimental and computational groups.</p>
+    </div>
+    <div class="box">
+      <h4>Join the team</h4>
+      <p>We welcome applications from PhD students, postdocs and engineers. Send a CV and a short statement of your research interests to <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+    </div>
+    <div class="box">
+      <h4>Internships</h4>
+      <p>Master students interested in computational biology, systems biology or immuno-oncology are welcome to contact us about internship opportunities.</p>
+    </div>
+  </div>
+</section>

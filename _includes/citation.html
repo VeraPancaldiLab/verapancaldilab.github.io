@@ -1,0 +1,24 @@
+{%- assign p = include.pub -%}
+{%- assign link = p.url -%}
+{%- if p.doi -%}{%- assign link = "https://doi.org/" | append: p.doi -%}{%- endif -%}
+<div class="citation"{% if include.searchable %} data-search="{{ p.title | downcase | escape }} {{ p.authors | downcase | escape }} {{ p.journal | downcase | escape }} {{ p.tags | join: ' ' | downcase | escape }}"{% endif %}>
+  {% if p.figure %}
+  <a href="{{ link }}" class="citation-image" aria-label="{{ p.title | escape }}">
+    <img src="{{ '/assets/images/papers/' | append: p.figure | relative_url }}" alt="Figure from: {{ p.title | escape }}" loading="lazy">
+  </a>
+  {% endif %}
+  <div class="citation-text">
+    <a href="{{ link }}" class="citation-title">{{ p.title }}</a>
+    <div class="citation-authors">{{ p.authors }}</div>
+    <div class="citation-details">
+      {{ p.journal }}<span class="sep">·</span>{{ p.date | default: p.year }}{% if p.doi %}<span class="sep">·</span>doi:{{ p.doi }}{% endif %}{% if p.preprint %}<span class="preprint">Preprint</span>{% endif %}
+    </div>
+    {% if p.code or p.docs or p.tags %}
+    <div class="citation-buttons">
+      {% if p.code %}<a class="button bare" href="{{ p.code }}">{% include icon.html name="code" %} Code</a>{% endif %}
+      {% if p.docs %}<a class="button bare" href="{{ p.docs }}">{% include icon.html name="book" %} Documentation</a>{% endif %}
+      {% if p.tags %}<span class="tags">{% for t in p.tags %}<button type="button" class="tag" data-tag="{{ t }}">{{ t }}</button>{% endfor %}</span>{% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>

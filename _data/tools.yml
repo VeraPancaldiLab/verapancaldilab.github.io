@@ -1,0 +1,67 @@
+# Software developed in the lab. Source: github.com/VeraPancaldiLab
+# logo: image in assets/images/tools/ (omit if the tool has none)
+
+- name: CellTFusion
+  logo: celltfusion.png
+  language: R
+  description: Integrates immune cell-type deconvolution with prior-knowledge TF–gene networks to characterise cell states of the tumour microenvironment from bulk RNA-seq.
+  repo: VeraPancaldiLab/CellTFusion
+  docs: https://verapancaldilab.github.io/CellTFusion/
+
+- name: multideconv
+  logo: multideconv.png
+  language: R
+  description: Integrative pipeline for cell-type deconvolution from bulk RNA-seq, combining first- and second-generation methods.
+  repo: VeraPancaldiLab/multideconv
+  docs: https://verapancaldilab.github.io/multideconv/
+
+- name: multimethconv
+  logo: multimethconv.png
+  language: R
+  description: Integrative pipeline for cell-type deconvolution from DNA methylation data.
+  repo: VeraPancaldiLab/multimethconv
+  docs: https://verapancaldilab.github.io/multimethconv/
+
+- name: RaCInG
+  logo: racing.png
+  language: R
+  description: Random graph model to infer cell–cell communication networks in the tumour microenvironment from bulk RNA-seq.
+  repo: VeraPancaldiLab/RaCInG_package
+  docs: https://verapancaldilab.github.io/RaCInG_package/
+
+- name: pipeML
+  logo: pipeml.png
+  language: R
+  description: Modular machine-learning framework for leakage-free classification and survival models through custom cross-validation fold construction.
+  repo: VeraPancaldiLab/pipeML
+  docs: https://verapancaldilab.github.io/pipeML/
+
+- name: tysserand
+  logo: tysserand.png
+  language: Python
+  description: Fast and accurate reconstruction of spatial networks from bioimages.
+  repo: VeraPancaldiLab/tysserand
+
+- name: MOSNA
+  logo: mosna.png
+  language: Python
+  description: Multi-omics spatial network analysis — patterns and community detection in spatial networks.
+  repo: VeraPancaldiLab/mosna
+
+- name: GARDEN-NET
+  logo: garden-net.png
+  language: TypeScript
+  description: Genome ARchitecture DNA Epigenome and Nucleome — Network Exploration Tool for 3D chromatin interaction networks.
+  repo: VeraPancaldiLab/GARDEN-NET
+  docs: https://pancaldi.bsc.es/garden-net/
+
+- name: PhysiGym
+  logo: physigym.jpg
+  language: Python
+  description: Bridges the Gymnasium reinforcement-learning interface and the PhysiCell agent-based modelling software.
+  repo: VeraPancaldiLab/PhysiGym
+
+- name: mcp-tme-servers
+  language: Python
+  description: A collection of MCP servers that let AI agents study the tumour microenvironment from bulk RNA-seq data.
+  repo: VeraPancaldiLab/mcp-tme-servers

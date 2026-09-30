@@ -1,0 +1,34 @@
+# Partnerships & funding. Source: Cancer Research Center of Toulouse (CRCT) NetB(IO)² team page.
+# logo: image in assets/images/partners/
+
+- name: Janssen Horizon
+  logo: janssen-horizon.jpg
+  url: https://www.janssenhorizon.org/
+
+- name: Toulouse Tech Transfer
+  logo: toulouse-tech-transfer.jpg
+  url: https://www.toulouse-tech-transfer.com/fr
+
+- name: Inserm Transfert
+  logo: inserm-transfert.jpg
+  url: https://www.inserm-transfert.fr/
+
+- name: Région Occitanie
+  logo: region-occitanie.jpg
+  url: https://www.laregion.fr/
+
+- name: France 2030
+  logo: france-2030.jpg
+  url: https://www.economie.gouv.fr/france-2030
+
+- name: Fondation pour la Recherche Médicale
+  logo: frm.jpg
+  url: https://www.frm.org/fr
+
+- name: La Ligue contre le cancer
+  logo: ligue-contre-le-cancer.jpg
+  url: https://www.ligue-cancer.net/
+
+- name: Cancéropôle Grand Sud-Ouest
+  logo: canceropole-gso.jpg
+  url: https://www.canceropole-gso.org/

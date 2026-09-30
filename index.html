@@ -1,0 +1,55 @@
+---
+layout: default
+title: Home
+---
+<section class="section">
+  <h1>Welcome to the Pancaldi Lab</h1>
+  <p class="hero-lead">
+    Our lab studies the relationship between patients and its tumor microenvironment, focusing on decoding 
+    how the immune system and the cancer cells interact and affect treatment outcomes and learning how
+    to improve and control them via computational approaches.
+  </p>
+  <p class="center">
+    <a class="button" href="{{ '/research/' | relative_url }}">Our research</a>
+    <a class="button" href="{{ '/tools/' | relative_url }}">Software</a>
+    <a class="button" href="{{ '/team/' | relative_url }}">Team</a>
+  </p>
+</section>
+
+<section class="section">
+  <h2>Research themes</h2>
+  <ul class="themes">
+    <li>Network theory</li>
+    <li>Systems biology</li>
+    <li>Epigenomics</li>
+    <li>Spatial, bulk &amp; single-cell transcriptomics</li>
+    <li>Genome architecture</li>
+    <li>Mathematical modeling</li>
+    <li>Multiscale modeling</li>
+    <li>Reinforcement learning</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Recent publications</h2>
+  {% assign recent = site.data.publications | where: "highlight", true %}
+  {% for p in recent limit: 3 %}
+    {% include citation.html pub=p %}
+  {% endfor %}
+  <p class="center"><a class="button" href="{{ '/research/#all' | relative_url }}">All publications</a></p>
+</section>
+
+<section class="section">
+  <div class="split">
+    <div>
+      <h2 class="left">The team</h2>
+      <p>Led by Vera Pancaldi, the lab brings together computational biologists, modellers and experimental biologists.</p>
+      <a class="button" href="{{ '/team/' | relative_url }}">Meet the team</a>
+    </div>
+    <div class="faces">
+      {% for m in site.data.team %}{% if m.photo %}
+      <a href="{{ '/team/' | relative_url }}"><img src="{{ '/assets/images/team/' | append: m.photo | relative_url }}" alt="{{ m.name }}" title="{{ m.name }}" loading="lazy" width="72" height="72"></a>
+      {% endif %}{% endfor %}
+    </div>
+  </div>
+</section>

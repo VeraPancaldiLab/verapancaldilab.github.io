@@ -1,0 +1,108 @@
+---
+layout: default
+title: Research
+heading: Research
+lead: >-
+  Our lab studies the relationship between patients and cancer, focusing on how the immune system and the tumour interact. Our goal is to understand how variability in the patients, in the tumours, and in their interactions affects the efficacy of cancer therapies throughout computational approaches that include data science, mathematical modeling, network theory and systems biology.
+scripts:
+  - /assets/js/publications.js
+---
+<section class="section">
+  <p>
+    Networks are a useful framework for systems where relationships between objects matter, and what we learn
+    about one network often helps us understand a completely different one. We apply network models to study complex systems
+    as networks of patient–patient similarity, 3D interaction between genes in the nucleus and the
+    interactions between cell types in a tumour.
+  </p>
+  <p>
+    There are many contexts within the body that are characterised by a heterogeneous mix of cell types.
+    In tissues, complex relationships between cell types establish ‘ecological networks’ whose properties
+    reflect the equilibria that define health against disease. In tumours, cancer cells are surrounded by
+    extremely heterogeneous cell populations, including stromal and immune cells, whose spatial patterns
+    and specific interactions strongly impact response to therapies and patient outcomes.
+
+    Simulating the complex interactions of these cells in our computers, both at the molecular and intercellular level,
+    offers the possibility to study these systems in a multitude of scenarios. This is an excellent way to formulate new
+    hypotheses and allows better use of our experimental resources.
+  </p>
+  <figure class="figure">
+    <img src="{{ '/assets/images/research-tme.jpg' | relative_url }}" alt="Overview of the team's research axes: multi-omics data analysis, multiscale dynamical modelling and TAM targeting to control the tumour microenvironment" width="1400" height="788" loading="lazy">
+    <figcaption>Our three research axes work together towards controlling the tumour microenvironment.</figcaption>
+  </figure>
+
+
+  <div class="grid-3">
+    <div class="box">
+      <span class="num">01</span>
+      <h4>Characterise</h4>
+      <p>Cell populations and their interactions in the tumour microenvironment (TME) considering cell–cell communication networks and spatial patterns as extracted from transcriptomics (both bulk and single-cell) or spatial omics and imaging produced from patient samples as well as their epigenomic landscape.</p>
+    </div>
+    <div class="box">
+      <span class="num">02</span>
+      <h4>Simulate</h4>
+      <p>Dynamic cell processes and inter-cellular interactions in the TME involving cancer, immune and stromal cells, exploiting mathematical models in different scales (molecular, cellular, etc.) of in vitro (2D/3D) and in vivo cancer models.</p>
+    </div>
+    <div class="box">
+      <span class="num">03</span>
+      <h4>Control</h4>
+      <p>Develop strategies to reprogram the TME and improve sensitivity of cancer cells to treatments, exploiting an in-house patented monoclonal antibody targeting tumour-associated macrophages,  identifying new strategies for TME reprogramming, and expanding our point of view to patient characteristics (immune fitness, microbiome, exposures, etc.)</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <h2>Projects</h2>
+  <div class="grid-3">
+    <div class="box project">
+      <img class="project-photo" src="{{ '/assets/images/projects/pancaldi.jpg' | relative_url }}" alt="Photo of Vera Pancaldi" loading="lazy" width="640" height="400">
+      <div class="project-body">
+        <h4>Multi-omics descriptions of the tumour microenvironment</h4>
+        <p>Led by Vera Pancaldi</p>
+        <a class="button bare" href="https://www.crct-inserm.fr/en/multi-omics-descriptions-of-the-tumour-microenvironment/">Read more →</a>
+      </div>
+    </div>
+    <div class="box project">
+      <img class="project-photo" src="{{ '/assets/images/projects/marku.jpg' | relative_url }}" alt="Photo of Malvina Marku" loading="lazy" width="640" height="400">
+      <div class="project-body">
+        <h4>Multiscale dynamical modelling of the tumour microenvironment</h4>
+        <p>Led by Malvina Marku</p>
+        <a class="button bare" href="https://www.crct-inserm.fr/en/multiscale-dynamical-modelling-of-the-tumor-microenvironment/">Read more →</a>
+      </div>
+    </div>
+    <div class="box project">
+      <img class="project-photo" src="{{ '/assets/images/projects/poupot.jpg' | relative_url }}" alt="Photo of Mary Poupot" loading="lazy" width="640" height="400">
+      <div class="project-body">
+        <h4>Experimental studies on cellular interactions in the microenvironment</h4>
+        <p>Led by Mary Poupot</p>
+        <a class="button bare" href="https://www.crct-inserm.fr/en/experimental-studies-on-cellular-interactions-in-the-microenvironment/">Read more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="highlighted">
+  <h2>Highlighted</h2>
+  {% for p in site.data.publications %}{% if p.highlight %}
+    {% include citation.html pub=p %}
+  {% endif %}{% endfor %}
+</section>
+
+<section class="section" id="all">
+  <h2>All publications</h2>
+  <div class="search-box">
+    {% include icon.html name="search" %}
+    <input type="search" id="pub-search" placeholder="Search titles, authors, journals or tags…" aria-label="Search publications">
+    <span id="pub-count" class="search-info"></span>
+  </div>
+
+  {% assign by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+  {% for y in by_year %}
+  <div class="year-group">
+    <h3>{{ y.name }}</h3>
+    {% for p in y.items %}
+      {% include citation.html pub=p searchable=true %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+  <p id="pub-empty" class="center" hidden>No publications match your search.</p>
+</section>

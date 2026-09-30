@@ -1,0 +1,66 @@
+---
+layout: default
+title: Team
+heading: Team
+groups:
+  - id: permanent
+    title: Permanent scientists
+  - id: postdoc
+    title: Postdocs
+  - id: phd
+    title: PhD students
+  - id: engineer
+    title: Engineers
+---
+{% assign pi = site.data.team | where: "group", "pi" | first %}
+<section class="section">
+  <h2>Principal investigator</h2>
+  <div class="pi">
+    <img src="{{ '/assets/images/team/' | append: pi.photo | relative_url }}" alt="Photo of {{ pi.name }}" width="220" height="220">
+    <div>
+      <div class="member-name">{{ pi.name }}</div>
+      <div class="member-role">{{ pi.role }}</div>
+      <p>{{ pi.bio }}</p>
+      <div class="member-links">
+        {% if pi.email %}<a href="mailto:{{ pi.email }}" aria-label="Email {{ pi.name }}">{% include icon.html name="mail" %}</a>{% endif %}
+        {% if pi.github %}<a href="https://github.com/{{ pi.github }}" aria-label="{{ pi.name }} on GitHub">{% include icon.html name="github" %}</a>{% endif %}
+        {% if pi.bluesky %}<a href="https://bsky.app/profile/{{ pi.bluesky }}" aria-label="{{ pi.name }} on Bluesky">{% include icon.html name="bluesky" %}</a>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% for g in page.groups %}
+{% assign members = site.data.team | where: "group", g.id %}
+{% if members.size > 0 %}
+<section class="section">
+  <h2>{{ g.title }}</h2>
+  <div class="team-grid">
+    {% for m in members %}
+    <div class="member">
+      {% if m.photo %}
+      <img src="{{ '/assets/images/team/' | append: m.photo | relative_url }}" alt="Photo of {{ m.name }}" loading="lazy" width="160" height="160">
+      {% else %}
+      {% assign words = m.name | split: " " %}
+      <div class="avatar" aria-hidden="true">{{ words[0] | slice: 0 }}{{ words.last | slice: 0 }}</div>
+      {% endif %}
+      <div class="member-name">{{ m.name }}</div>
+      <div class="member-role">{{ m.role }}</div>
+      {% if m.field %}<div class="member-field">{{ m.field }}</div>{% endif %}
+      {% if m.bio %}<p class="member-bio">{{ m.bio }}</p>{% endif %}
+      <div class="member-links">
+        {% if m.email %}<a href="mailto:{{ m.email }}" aria-label="Email {{ m.name }}">{% include icon.html name="mail" %}</a>{% endif %}
+        {% if m.github %}<a href="https://github.com/{{ m.github }}" aria-label="{{ m.name }} on GitHub">{% include icon.html name="github" %}</a>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+{% endfor %}
+
+<section class="section">
+  <h2>Join us</h2>
+  <p class="center">We welcome applications from students, engineers and postdocs interested in network biology, computational oncology and immunology.
+    Get in touch with <a href="mailto:{{ site.email }}">Vera Pancaldi</a>.</p>
+</section>
