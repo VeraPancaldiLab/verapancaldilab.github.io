@@ -18,7 +18,11 @@
   role: Permanent scientist
   group: permanent
   photo: poupot.jpg
-  bio: Leads the experimental studies on cellular interactions in the microenvironment within the team.
+  bio: 'Chargée de Recherches Hors Classe (CRHC) at Inserm. Her areas of scientific expertise are biochemistry,
+    pharmacology and immunology applied to anticancer therapy. Her research focuses on targeting two components
+    of the tumour microenvironment (TME) to establish new, more effective anticancer treatments: tumour-associated
+    macrophages (TAMs) and gamma delta T lymphocytes (γδ T cells). Leads the experimental studies on cellular
+    interactions in the TME within the team.'
 
 - name: Benoît Aliaga
   role: Postdoctoral researcher

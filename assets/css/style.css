@@ -203,13 +203,10 @@ main > .section[id] { scroll-margin-top: 60px; }
 .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--primary); }
 
 /* Leadership: wide profile cards */
-.leader { display: flex; gap: 32px; align-items: center; margin-top: 20px; padding: 24px; background: #fff; text-align: left; border: 1px solid var(--light-gray); border-radius: 8px; }
-.leader-photo { width: 150px; height: 150px; flex-shrink: 0; object-fit: cover; border-radius: 8px; }
-.leader-pi { padding: 28px; border-left: 4px solid var(--primary); }
-.leader-pi .leader-photo { width: 230px; height: 230px; }
+.leader { display: flex; gap: 32px; align-items: center; margin-top: 20px; padding: 28px; background: #fff; text-align: left; border: 1px solid var(--light-gray); border-left: 4px solid var(--primary); border-radius: 8px; }
+.leader-photo { width: 230px; height: 230px; flex-shrink: 0; object-fit: cover; border-radius: 8px; }
 .leader-body { flex: 1; min-width: 0; }
-.leader-name { margin: 4px 0 2px; font-size: 24px; text-align: left; line-height: 1.25; }
-.leader-pi .leader-name { font-size: 30px; }
+.leader-name { margin: 4px 0 2px; font-size: 30px; text-align: left; line-height: 1.25; }
 .leader-role { color: var(--authors); font-size: 16px; }
 .leader-bio { margin: 12px 0 0; font-size: 16px; line-height: 1.6; text-align: left; color: #333; }
 .leader-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
@@ -349,9 +346,9 @@ h2.left { text-align: left; }
 }
 
 @media (max-width: 800px) {
-  .leader, .leader-pi { flex-direction: column; align-items: flex-start; gap: 18px; padding: 20px; }
-  .leader-pi .leader-photo { width: 180px; height: 180px; }
-  .leader-pi .leader-name { font-size: 26px; }
+  .leader { flex-direction: column; align-items: flex-start; gap: 18px; padding: 20px; }
+  .leader-photo { width: 180px; height: 180px; }
+  .leader-name { font-size: 26px; }
   .team-grid { gap: 14px; }
   .member, .team-grid.cols-5 .member { width: calc(50% - 7px); }
   .team-grid.cols-5 { gap: 14px; }

@@ -10,7 +10,9 @@ groups:
   - id: engineer
     title: Engineers
 ---
-{% assign leaders = site.data.team | where_exp: "m", "m.group == 'pi' or m.group == 'permanent'" %}
+{% assign pis = site.data.team | where: "group", "pi" %}
+{% assign permanent = site.data.team | where: "group", "permanent" %}
+{% assign leaders = pis | concat: permanent %}
 <section class="section" id="leadership">
   <nav class="team-jump" aria-label="Jump to a group">
     <a href="#leadership">Leadership <span class="count">{{ leaders.size }}</span></a>
