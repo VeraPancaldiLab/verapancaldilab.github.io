@@ -7,7 +7,7 @@ lead: >-
 scripts:
   - /assets/js/publications.js
 ---
-<section class="section">
+<section class="section" id="overview">
   <p>
     Networks are a useful framework for systems where relationships between objects matter, and what we learn
     about one network often helps us understand a completely different one. We apply network models to study complex systems
@@ -29,20 +29,28 @@ scripts:
     <img src="{{ '/assets/images/research-tme.jpg' | relative_url }}" alt="Overview of the team's research axes: multi-omics data analysis, multiscale dynamical modelling and TAM targeting to control the tumour microenvironment" width="1400" height="788" loading="lazy">
     <figcaption>Our three research axes work together towards controlling the tumour microenvironment.</figcaption>
   </figure>
+</section>
 
-
-  <div class="grid-3">
-    <div class="box">
+<section class="section" id="objectives">
+  <h2>Research objectives</h2>
+  <div class="objectives-flow">
+    <div class="box objective">
       <span class="num">01</span>
       <h4>Characterise</h4>
       <p>Cell populations and their interactions in the tumour microenvironment (TME) considering cell–cell communication networks and spatial patterns as extracted from transcriptomics (both bulk and single-cell) or spatial omics and imaging produced from patient samples as well as their epigenomic landscape.</p>
     </div>
-    <div class="box">
+    <div class="flow-arrow" aria-hidden="true">
+      <svg viewBox="0 0 44 24"><path d="M3 12h38M3 12l8-7M3 12l8 7M41 12l-8-7M41 12l-8 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="box objective">
       <span class="num">02</span>
       <h4>Simulate</h4>
       <p>Dynamic cell processes and inter-cellular interactions in the TME involving cancer, immune and stromal cells, exploiting mathematical models in different scales (molecular, cellular, etc.) of in vitro (2D/3D) and in vivo cancer models.</p>
     </div>
-    <div class="box">
+    <div class="flow-arrow" aria-hidden="true">
+      <svg viewBox="0 0 44 24"><path d="M3 12h38M3 12l8-7M3 12l8 7M41 12l-8-7M41 12l-8 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="box objective">
       <span class="num">03</span>
       <h4>Control</h4>
       <p>Develop strategies to reprogram the TME and improve sensitivity of cancer cells to treatments, exploiting an in-house patented monoclonal antibody targeting tumour-associated macrophages,  identifying new strategies for TME reprogramming, and expanding our point of view to patient characteristics (immune fitness, microbiome, exposures, etc.)</p>
@@ -56,25 +64,28 @@ scripts:
     <div class="box project">
       <img class="project-photo" src="{{ '/assets/images/projects/pancaldi.jpg' | relative_url }}" alt="Photo of Vera Pancaldi" loading="lazy" width="640" height="400">
       <div class="project-body">
+        <div class="eyebrow">Project</div>
         <h4>Multi-omics descriptions of the tumour microenvironment</h4>
         <p>Led by Vera Pancaldi</p>
-        <a class="button bare" href="https://www.crct-inserm.fr/en/multi-omics-descriptions-of-the-tumour-microenvironment/">Read more →</a>
+        <div class="project-footer"><a href="https://www.crct-inserm.fr/en/multi-omics-descriptions-of-the-tumour-microenvironment/">Read more →</a></div>
       </div>
     </div>
     <div class="box project">
       <img class="project-photo" src="{{ '/assets/images/projects/marku.jpg' | relative_url }}" alt="Photo of Malvina Marku" loading="lazy" width="640" height="400">
       <div class="project-body">
+        <div class="eyebrow">Project</div>
         <h4>Multiscale dynamical modelling of the tumour microenvironment</h4>
         <p>Led by Malvina Marku</p>
-        <a class="button bare" href="https://www.crct-inserm.fr/en/multiscale-dynamical-modelling-of-the-tumor-microenvironment/">Read more →</a>
+        <div class="project-footer"><a href="https://www.crct-inserm.fr/en/multiscale-dynamical-modelling-of-the-tumor-microenvironment/">Read more →</a></div>
       </div>
     </div>
     <div class="box project">
       <img class="project-photo" src="{{ '/assets/images/projects/poupot.jpg' | relative_url }}" alt="Photo of Mary Poupot" loading="lazy" width="640" height="400">
       <div class="project-body">
+        <div class="eyebrow">Project</div>
         <h4>Experimental studies on cellular interactions in the microenvironment</h4>
         <p>Led by Mary Poupot</p>
-        <a class="button bare" href="https://www.crct-inserm.fr/en/experimental-studies-on-cellular-interactions-in-the-microenvironment/">Read more →</a>
+        <div class="project-footer"><a href="https://www.crct-inserm.fr/en/experimental-studies-on-cellular-interactions-in-the-microenvironment/">Read more →</a></div>
       </div>
     </div>
   </div>
@@ -89,16 +100,27 @@ scripts:
 
 <section class="section" id="all">
   <h2>All publications</h2>
-  <div class="search-box">
-    {% include icon.html name="search" %}
-    <input type="search" id="pub-search" placeholder="Search titles, authors, journals or tags…" aria-label="Search publications">
-    <span id="pub-count" class="search-info"></span>
+
+  <div class="pub-toolbar">
+    <div class="search-box">
+      {% include icon.html name="search" %}
+      <input type="search" id="pub-search" placeholder="Search titles, authors, journals or topics…" aria-label="Search publications">
+      <span id="pub-count" class="search-info"></span>
+      <button type="button" id="pub-clear" class="search-clear" aria-label="Clear search" hidden>&times;</button>
+    </div>
+
+    {% assign by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+    <div class="pub-filters">
+      <span class="pub-filters-label">Years</span>
+      <div class="pub-filters-items">
+        {% for y in by_year %}<a class="year-link" href="#y{{ y.name }}">{{ y.name }}</a>{% endfor %}
+      </div>
+    </div>
   </div>
 
-  {% assign by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
   {% for y in by_year %}
-  <div class="year-group">
-    <h3>{{ y.name }}</h3>
+  <div class="year-group" id="y{{ y.name }}">
+    <h3 class="year-heading"><span>{{ y.name }}</span><span class="year-count">{{ y.items.size }} {% if y.items.size == 1 %}publication{% else %}publications{% endif %}</span></h3>
     {% for p in y.items %}
       {% include citation.html pub=p searchable=true %}
     {% endfor %}

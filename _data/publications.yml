@@ -4,6 +4,19 @@
 # highlight: true -> also shown in "Highlighted" on the Research page
 # preprint:  true -> labelled as preprint
 
+- title: Precision targeting of human M2 macrophages by magnetic nanoparticles functionalized with an in-house antibody
+  authors: Chloe Bazile, Julie Bordenave, Saber Amri, Flavien Raynal, Laetitia Ligat, Manon Farcé, Henri Coste, Pascal Clerc, Olivier Sandre, Corinne Bousquet, Vera Pancaldi, Stéphane Mornet, Véronique Gigoux, Mary Poupot
+  journal: International Journal of Nanomedicine
+  date: Aug 2026
+  year: 2026
+  doi: 10.2147/IJN.S619574
+  figure: 10-2147-ijn-s619574.jpg
+  tags:
+  - Macrophages
+  - Tumour microenvironment
+  - Nanomedicine
+  highlight: true
+
 - title: 'Correction: γδ T cells in immunotherapies for B-cell malignancies'
   authors: Léa Rimailho, Carla Faria, Marcin Domagala, Camille Laurent, Christine Bezombes, Mary Poupot
   journal: Frontiers in Immunology

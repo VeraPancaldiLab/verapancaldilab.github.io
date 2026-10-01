@@ -21,6 +21,14 @@
   logo: france-2030.jpg
   url: https://www.economie.gouv.fr/france-2030
 
+- name: Agence Nationale de la Recherche (ANR)
+  logo: anr.jpg
+  url: https://anr.fr/
+
+- name: PEPR Cell-ID
+  logo: pepr-cell-id.jpg
+  url: https://www.pepr-cell-id.fr/
+
 - name: Fondation pour la Recherche Médicale
   logo: frm.jpg
   url: https://www.frm.org/fr

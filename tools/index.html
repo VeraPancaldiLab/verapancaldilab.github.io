@@ -3,26 +3,42 @@ layout: default
 title: Tools
 heading: Tools
 lead: Softwares developed in the team to explore and study the tumor microenvironment (TME)
+scripts:
+  - /assets/js/tools.js
 ---
 <section class="section">
-  <div class="card-grid">
-    {% for t in site.data.tools %}
-    <div class="card">
-      <a class="card-image" href="https://github.com/{{ t.repo }}" aria-label="{{ t.name }}">
-        {% if t.logo %}<img src="{{ '/assets/images/tools/' | append: t.logo | relative_url }}" alt="{{ t.name }} logo" loading="lazy">
-        {% else %}<span class="placeholder">{{ t.name }}</span>{% endif %}
-      </a>
-      <div class="card-text">
-        <a class="card-title" href="https://github.com/{{ t.repo }}">{{ t.name }}</a>
-        <div class="card-subtitle">{{ t.language }}</div>
-        <p>{{ t.description }}</p>
-        <div class="card-links">
-          <a class="button bare" href="https://github.com/{{ t.repo }}">{% include icon.html name="github" %} Repository</a>
-          {% if t.docs %}<a class="button bare" href="{{ t.docs }}">{% include icon.html name="book" %} Documentation</a>{% endif %}
-        </div>
-      </div>
-    </div>
+  {% assign languages = site.data.tools | map: "language" | uniq %}
+  <div class="tool-filter" role="group" aria-label="Filter tools by language">
+    <button type="button" class="filter-btn active" data-filter="all">All <span class="count">{{ site.data.tools.size }}</span></button>
+    {% for lang in languages %}
+    {% assign n = site.data.tools | where: "language", lang | size %}
+    <button type="button" class="filter-btn" data-filter="{{ lang }}"><span class="lang-dot lang-{{ lang | slugify }}"></span>{{ lang }} <span class="count">{{ n }}</span></button>
     {% endfor %}
   </div>
-  <p class="center"><a class="button" href="https://github.com/{{ site.github }}">{% include icon.html name="github" %} All repositories on GitHub</a></p>
+
+  <div class="tool-list">
+    {% for t in site.data.tools %}
+    <article class="tool" data-language="{{ t.language }}">
+      <a class="tool-logo" href="https://github.com/{{ t.repo }}" aria-label="{{ t.name }} on GitHub" tabindex="-1">
+        {% if t.logo %}<img src="{{ '/assets/images/tools/' | append: t.logo | relative_url }}" alt="{{ t.name }} logo" loading="lazy">
+        {% else %}<span class="tool-logo-placeholder">{% include icon.html name="code" %}</span>{% endif %}
+      </a>
+      <div class="tool-body">
+        <div class="tool-meta">
+          <span class="tool-category">{{ t.category }}</span>
+          <span class="tool-lang"><span class="lang-dot lang-{{ t.language | slugify }}"></span>{{ t.language }}</span>
+        </div>
+        <h3 class="tool-name"><a href="https://github.com/{{ t.repo }}">{{ t.name }}</a></h3>
+        <p class="tool-desc">{{ t.description }}</p>
+        <div class="tool-links">
+          <a href="https://github.com/{{ t.repo }}">{% include icon.html name="github" %} GitHub</a>
+          {% if t.docs %}<a href="{{ t.docs }}">{% include icon.html name="book" %} Documentation</a>{% endif %}
+          {% if t.paper %}<a href="{{ t.paper }}">{% include icon.html name="link" %} Paper</a>{% endif %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+
+  <p class="center tool-more"><a class="button" href="https://github.com/{{ site.github }}">{% include icon.html name="github" %} All repositories on GitHub</a></p>
 </section>

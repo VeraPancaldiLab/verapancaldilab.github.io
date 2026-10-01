@@ -1,28 +1,37 @@
-# Software developed in the lab. Source: github.com/VeraPancaldiLab
-# logo: image in assets/images/tools/ (omit if the tool has none)
+# Software developed in the team. Source: github.com/VeraPancaldiLab
+# category: short topic label shown above the name
+# logo:     image in assets/images/tools/ (omit if the tool has none)
+# docs:     documentation website (optional)
+# paper:    link to the tool's publication (optional)
 
 - name: CellTFusion
+  category: Tumour microenvironment
   logo: celltfusion.png
   language: R
   description: Integrates immune cell-type deconvolution with prior-knowledge TF–gene networks to characterise cell states of the tumour microenvironment from bulk RNA-seq.
   repo: VeraPancaldiLab/CellTFusion
   docs: https://verapancaldilab.github.io/CellTFusion/
+  paper: https://doi.org/10.64898/2026.06.30.735682
 
 - name: multideconv
+  category: Cell-type deconvolution
   logo: multideconv.png
   language: R
   description: Integrative pipeline for cell-type deconvolution from bulk RNA-seq, combining first- and second-generation methods.
   repo: VeraPancaldiLab/multideconv
   docs: https://verapancaldilab.github.io/multideconv/
+  paper: https://doi.org/10.1101/2025.04.29.651220
 
 - name: multimethconv
+  category: Cell-type deconvolution
   logo: multimethconv.png
   language: R
   description: Integrative pipeline for cell-type deconvolution from DNA methylation data.
   repo: VeraPancaldiLab/multimethconv
   docs: https://verapancaldilab.github.io/multimethconv/
 
-- name: RaCInG
+- name: RaCInG 2.0
+  category: Cell–cell communication
   logo: racing.png
   language: R
   description: Random graph model to infer cell–cell communication networks in the tumour microenvironment from bulk RNA-seq.
@@ -30,38 +39,49 @@
   docs: https://verapancaldilab.github.io/RaCInG_package/
 
 - name: pipeML
+  category: Machine learning
   logo: pipeml.png
   language: R
   description: Modular machine-learning framework for leakage-free classification and survival models through custom cross-validation fold construction.
   repo: VeraPancaldiLab/pipeML
   docs: https://verapancaldilab.github.io/pipeML/
+  paper: https://doi.org/10.64898/2026.03.12.711429
 
 - name: tysserand
+  category: Spatial networks
   logo: tysserand.png
   language: Python
   description: Fast and accurate reconstruction of spatial networks from bioimages.
   repo: VeraPancaldiLab/tysserand
+  paper: https://doi.org/10.1093/bioinformatics/btab490
 
 - name: MOSNA
+  category: Spatial networks
   logo: mosna.png
   language: Python
   description: Multi-omics spatial network analysis — patterns and community detection in spatial networks.
   repo: VeraPancaldiLab/mosna
+  paper: https://doi.org/10.1016/j.mcpro.2026.101536
 
 - name: GARDEN-NET
+  category: Genome architecture
   logo: garden-net.png
   language: TypeScript
   description: Genome ARchitecture DNA Epigenome and Nucleome — Network Exploration Tool for 3D chromatin interaction networks.
   repo: VeraPancaldiLab/GARDEN-NET
   docs: https://pancaldi.bsc.es/garden-net/
+  paper: https://doi.org/10.1093/nar/gkaa159
 
 - name: PhysiGym
+  category: Agent-based modelling
   logo: physigym.jpg
   language: Python
   description: Bridges the Gymnasium reinforcement-learning interface and the PhysiCell agent-based modelling software.
   repo: VeraPancaldiLab/PhysiGym
+  paper: https://doi.org/10.1101/2025.09.18.677030
 
 - name: mcp-tme-servers
+  category: AI agents
   language: Python
   description: A collection of MCP servers that let AI agents study the tumour microenvironment from bulk RNA-seq data.
   repo: VeraPancaldiLab/mcp-tme-servers

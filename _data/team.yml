@@ -1,5 +1,6 @@
 # Team members. Source: Cancer Research Center of Toulouse (CRCT) NetB(IO)² team page and the VeraPancaldiLab GitHub organisation.
 # group must match one of the groups listed in team/index.html
+# group: alumni -> listed in the Alumni section (role = position held in the team)
 
 - name: Vera Pancaldi
   role: Team leader · Permanent scientist
@@ -58,12 +59,6 @@
   photo: chenel.jpg
   github: HugoChenel
 
-- name: Chloé Bazile
-  role: PhD student
-  field: Cancerology
-  group: phd
-  photo: bazile.jpg
-
 - name: Hafida Hamdache
   role: PhD student
   field: Computational biology
@@ -76,8 +71,19 @@
   group: phd
   github: Dante-Berth
 
+- name: Lily Marchal
+  role: PhD student
+  field: Cancerology
+  group: phd
+
+- name: Kazim Kucuk
+  role: PhD student
+  field: Computational biology
+  group: phd
+  github: jrchaasm
+
 - name: Julie Bordenave
-  role: Laboratory engineer
+  role: Research engineer
   group: engineer
   photo: bordenave.jpg
 
@@ -95,3 +101,67 @@
   role: Bioinformatics engineer
   group: engineer
   github: OwenGriere
+
+- name: Rajath Prabhu
+  role: Research engineer
+  group: engineer
+  github: RajathPrabhu221
+
+- name: Malvina Marku
+  role: Postdoc
+  field: Computational biology
+  group: alumni
+
+- name: Chloe Bazile
+  role: PhD student
+  field: Cancerology
+  group: alumni
+
+- name: Marcin Domagala
+  role: Postdoc
+  field: Cancerology
+  group: alumni
+
+- name: Abdelmounim Essabbar
+  role: Postdoc
+  field: Computational biology
+  group: alumni
+
+- name: Leila Khajavi
+  role: Postdoc
+  field: Computational biology
+  group: alumni
+
+- name: Flavien Raynal
+  role: Bioinformatics engineer
+  group: alumni
+
+- name: Jacobo Solorzano
+  role: PhD student
+  field: Computational biology
+  group: alumni
+
+- name: Matthieu Genais
+  role: PhD student
+  field: Computational biology
+  group: alumni
+
+- name: Alexis Hucteau
+  role: PhD student
+  field: Computational biology
+  group: alumni
+
+- name: Alexis Coullomb
+  role: Postdoc
+  field: Computational biology
+  group: alumni
+
+- name: Nina Verstraete
+  role: Postdoc
+  field: Computational biology
+  group: alumni
+
+- name: Ting Xie
+  role: Postdoc
+  field: Computational biology
+  group: alumni

@@ -1,7 +1,13 @@
 {%- assign p = include.pub -%}
 {%- assign link = p.url -%}
 {%- if p.doi -%}{%- assign link = "https://doi.org/" | append: p.doi -%}{%- endif -%}
-<div class="citation"{% if include.searchable %} data-search="{{ p.title | downcase | escape }} {{ p.authors | downcase | escape }} {{ p.journal | downcase | escape }} {{ p.tags | join: ' ' | downcase | escape }}"{% endif %}>
+{%- assign authors = p.authors | split: ", " -%}
+{%- assign n = authors.size -%}
+{%- comment -%} Long author lists: first 6 … last 3, the middle expandable. {%- endcomment -%}
+{%- assign collapse = false -%}
+{%- if n > 12 -%}{%- assign collapse = true -%}{%- endif -%}
+{%- assign tail_start = n | minus: 3 -%}
+<div class="citation"{% if include.searchable %} data-search="{{ p.title | downcase | escape }} {{ p.authors | downcase | escape }} {{ p.journal | downcase | escape }} {{ p.tags | join: ' ' | downcase | escape }}{% if p.preprint %} preprint{% endif %}"{% endif %}>
   {% if p.figure %}
   <a href="{{ link }}" class="citation-image" aria-label="{{ p.title | escape }}">
     <img src="{{ '/assets/images/papers/' | append: p.figure | relative_url }}" alt="Figure from: {{ p.title | escape }}" loading="lazy">
@@ -9,7 +15,15 @@
   {% endif %}
   <div class="citation-text">
     <a href="{{ link }}" class="citation-title">{{ p.title }}</a>
-    <div class="citation-authors">{{ p.authors }}</div>
+    <div class="citation-authors">
+      {%- for a in authors -%}
+        {%- if collapse and forloop.index0 == 6 -%}<span class="authors-more" hidden>{%- endif -%}
+        {%- if collapse and forloop.index0 == tail_start -%}</span><span class="authors-ellipsis">…, </span>{%- endif -%}
+        {{- a -}}
+        {%- unless forloop.last -%}, {% endunless -%}
+      {%- endfor -%}
+      {%- if collapse %} <button type="button" class="authors-toggle" aria-expanded="false" data-more="show all {{ n }} authors">show all {{ n }} authors</button>{% endif -%}
+    </div>
     <div class="citation-details">
       {{ p.journal }}<span class="sep">·</span>{{ p.date | default: p.year }}{% if p.doi %}<span class="sep">·</span>doi:{{ p.doi }}{% endif %}{% if p.preprint %}<span class="preprint">Preprint</span>{% endif %}
     </div>

@@ -3,8 +3,6 @@ layout: default
 title: Team
 heading: Team
 groups:
-  - id: permanent
-    title: Permanent scientists
   - id: postdoc
     title: Postdocs
   - id: phd
@@ -12,55 +10,97 @@ groups:
   - id: engineer
     title: Engineers
 ---
-{% assign pi = site.data.team | where: "group", "pi" | first %}
-<section class="section">
-  <h2>Principal investigator</h2>
-  <div class="pi">
-    <img src="{{ '/assets/images/team/' | append: pi.photo | relative_url }}" alt="Photo of {{ pi.name }}" width="220" height="220">
-    <div>
-      <div class="member-name">{{ pi.name }}</div>
-      <div class="member-role">{{ pi.role }}</div>
-      <p>{{ pi.bio }}</p>
-      <div class="member-links">
-        {% if pi.email %}<a href="mailto:{{ pi.email }}" aria-label="Email {{ pi.name }}">{% include icon.html name="mail" %}</a>{% endif %}
-        {% if pi.github %}<a href="https://github.com/{{ pi.github }}" aria-label="{{ pi.name }} on GitHub">{% include icon.html name="github" %}</a>{% endif %}
-        {% if pi.bluesky %}<a href="https://bsky.app/profile/{{ pi.bluesky }}" aria-label="{{ pi.name }} on Bluesky">{% include icon.html name="bluesky" %}</a>{% endif %}
+{% assign leaders = site.data.team | where_exp: "m", "m.group == 'pi' or m.group == 'permanent'" %}
+<section class="section" id="leadership">
+  <nav class="team-jump" aria-label="Jump to a group">
+    <a href="#leadership">Leadership <span class="count">{{ leaders.size }}</span></a>
+    {% for g in page.groups %}
+    {% assign n = site.data.team | where: "group", g.id | size %}
+    {% if n > 0 %}<a href="#{{ g.id }}">{{ g.title }} <span class="count">{{ n }}</span></a>{% endif %}
+    {% endfor %}
+    {% assign n_alumni = site.data.team | where: "group", "alumni" | size %}
+    {% if n_alumni > 0 %}<a href="#alumni">Alumni <span class="count">{{ n_alumni }}</span></a>{% endif %}
+  </nav>
+
+  <h2>Leadership</h2>
+  {% for m in leaders %}
+  <article class="leader{% if m.group == 'pi' %} leader-pi{% endif %}">
+    <img class="leader-photo" src="{{ '/assets/images/team/' | append: m.photo | relative_url }}" alt="Photo of {{ m.name }}" width="400" height="400">
+    <div class="leader-body">
+      <div class="eyebrow">{% if m.group == 'pi' %}Principal investigator{% else %}Permanent scientist{% endif %}</div>
+      <h3 class="leader-name">{{ m.name }}</h3>
+      {% if m.group == 'pi' %}<div class="leader-role">{{ m.role }}</div>{% endif %}
+      <p class="leader-bio">{{ m.bio }}</p>
+      {% if m.email or m.github or m.bluesky %}
+      <div class="leader-links">
+        {% if m.email %}<a class="pill" href="mailto:{{ m.email }}">{% include icon.html name="mail" %} Email</a>{% endif %}
+        {% if m.github %}<a class="pill" href="https://github.com/{{ m.github }}">{% include icon.html name="github" %} GitHub</a>{% endif %}
+        {% if m.bluesky %}<a class="pill" href="https://bsky.app/profile/{{ m.bluesky }}">{% include icon.html name="bluesky" %} Bluesky</a>{% endif %}
       </div>
+      {% endif %}
     </div>
-  </div>
+  </article>
+  {% endfor %}
 </section>
 
 {% for g in page.groups %}
 {% assign members = site.data.team | where: "group", g.id %}
 {% if members.size > 0 %}
-<section class="section">
+<section class="section" id="{{ g.id }}">
   <h2>{{ g.title }}</h2>
-  <div class="team-grid">
+  <div class="team-grid{% if members.size == 5 %} cols-5{% elsif members.size == 6 %} cols-3{% endif %}">
     {% for m in members %}
-    <div class="member">
+    <article class="member">
       {% if m.photo %}
-      <img src="{{ '/assets/images/team/' | append: m.photo | relative_url }}" alt="Photo of {{ m.name }}" loading="lazy" width="160" height="160">
+      <img class="member-photo" src="{{ '/assets/images/team/' | append: m.photo | relative_url }}" alt="Photo of {{ m.name }}" loading="lazy" width="400" height="400">
       {% else %}
       {% assign words = m.name | split: " " %}
-      <div class="avatar" aria-hidden="true">{{ words[0] | slice: 0 }}{{ words.last | slice: 0 }}</div>
+      <div class="member-photo member-initials" aria-hidden="true">{{ words[0] | slice: 0 }}{{ words.last | slice: 0 }}</div>
       {% endif %}
-      <div class="member-name">{{ m.name }}</div>
-      <div class="member-role">{{ m.role }}</div>
-      {% if m.field %}<div class="member-field">{{ m.field }}</div>{% endif %}
-      {% if m.bio %}<p class="member-bio">{{ m.bio }}</p>{% endif %}
-      <div class="member-links">
-        {% if m.email %}<a href="mailto:{{ m.email }}" aria-label="Email {{ m.name }}">{% include icon.html name="mail" %}</a>{% endif %}
-        {% if m.github %}<a href="https://github.com/{{ m.github }}" aria-label="{{ m.name }} on GitHub">{% include icon.html name="github" %}</a>{% endif %}
+      <div class="member-body">
+        <h3 class="member-name">{{ m.name }}</h3>
+        <div class="member-role">{{ m.role }}</div>
+        {% if m.field %}<div class="member-field">{{ m.field }}</div>{% endif %}
+        {% if m.bio %}<p class="member-bio">{{ m.bio }}</p>{% endif %}
+        {% if m.email or m.github %}
+        <div class="member-links">
+          {% if m.email %}<a href="mailto:{{ m.email }}" aria-label="Email {{ m.name }}" title="Email">{% include icon.html name="mail" %}</a>{% endif %}
+          {% if m.github %}<a href="https://github.com/{{ m.github }}" aria-label="{{ m.name }} on GitHub" title="GitHub">{% include icon.html name="github" %}</a>{% endif %}
+        </div>
+        {% endif %}
       </div>
-    </div>
+    </article>
     {% endfor %}
   </div>
 </section>
 {% endif %}
 {% endfor %}
 
+{% assign alumni = site.data.team | where: "group", "alumni" %}
+{% if alumni.size > 0 %}
+<section class="section" id="alumni">
+  <h2>Alumni</h2>
+  <div class="alumni-grid">
+    {% for m in alumni %}
+    {% assign words = m.name | split: " " %}
+    <div class="alumnus">
+      <div class="alumnus-initials" aria-hidden="true">{{ words[0] | slice: 0 }}{{ words.last | slice: 0 }}</div>
+      <div>
+        <div class="alumnus-name">{{ m.name }}</div>
+        <div class="alumnus-role">{{ m.role }}{% if m.field %} · {{ m.field }}{% endif %}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 <section class="section">
-  <h2>Join us</h2>
-  <p class="center">We welcome applications from students, engineers and postdocs interested in network biology, computational oncology and immunology.
-    Get in touch with <a href="mailto:{{ site.email }}">Vera Pancaldi</a>.</p>
+  <div class="cta">
+    <div>
+      <h2>Join us</h2>
+      <p>We welcome applications from students, engineers and postdocs interested in network biology, computational oncology and immunology.</p>
+    </div>
+    <a class="button" href="{{ '/contact/' | relative_url }}">Get in touch</a>
+  </div>
 </section>

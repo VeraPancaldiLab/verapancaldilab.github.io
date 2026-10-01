@@ -24,6 +24,7 @@
   </main>
 
   {% include footer.html %}
+  <script src="{{ '/assets/js/header-network.js' | relative_url }}" defer></script>
   {% if page.scripts %}{% for s in page.scripts %}
   <script src="{{ s | relative_url }}"></script>
   {% endfor %}{% endif %}
